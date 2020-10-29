@@ -1,38 +1,85 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a{
+  color:#2199DF;
+  text-decoration: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+ul{
+  margin-left: 1.5rem;
+  list-style: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+button,
+input[type="submit"]{
+  border: none;
+  background: none;
+  color: red;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 1.4rem;
+
+}
+
+#header{
+  display: flex;
+  background-color: lightcyan;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.register-form{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.register-input{
+  width: 50%;
+  margin-top: 1rem;
+  padding: 8px;
+  outline: none;
+  border: 1px solid lightseagreen;
+  border-radius: 10px;
+}
+.register-input:focus{
+  box-shadow: inset 0px 0px 5px rgba(120, 231, 123, .7);
+}
+.submit-button{
+  font-size: 1rem;
+  background-color: lightgreen;
+  height: 100%;
+  width: 6rem;
+  border-radius: 10px;
+  outline: none;
+  margin-top: 1rem;
+}
+h2{
+  color: lightsalmon;
+  text-align: center;
+  font-size: 2.1rem;
+}
+.error-notice{
+  text-align: center;
+  background-color: lightpink;
+  position: absolute;
+  right: 0;
+  width: 22%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+.error-notice span{
+  padding-left: 3%;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+.error-notice>button{
+  background-color: tomato;
+  color: wheat;
+  outline: none;
+} 
